@@ -10,10 +10,12 @@ public class LevellingGuideActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.levelling_guide_list);
+        setContentView(R.layout.activity_levelling_guide_list);
 
         LevellingGuide levellingGuide = new LevellingGuide();
         ArrayList<Level> levelList = levellingGuide.getList();
+
+        LevellingGuideAdapter levellingGuideAdapter = new LevellingGuideAdapter(this, levellingGuide);
 
     }
 
