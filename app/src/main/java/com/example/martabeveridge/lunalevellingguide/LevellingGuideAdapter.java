@@ -29,6 +29,13 @@ public class LevellingGuideAdapter extends ArrayAdapter<Level>{
         TextView nameTextView = listItemView.findViewById(R.id.nameTextViewId);
         nameTextView.setText(currentLevel.getName().toString());
 
+        TextView targetTextView = listItemView.findViewById(R.id.targetTextViewId);
+        targetTextView.setText(currentLevel.getTarget().toString());
+
+        String levelTarget = currentLevel.getTarget().toString();
+        String fullLevelTarget = getContext().getString(R.string.targetability) + " " + levelTarget;
+        targetTextView.setText(fullLevelTarget);
+
         TextView levelTextView = listItemView.findViewById(R.id.levelTextViewId);
         levelTextView.setText(currentLevel.getLevel().toString());
 

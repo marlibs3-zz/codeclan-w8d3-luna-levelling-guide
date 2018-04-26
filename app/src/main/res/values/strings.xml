@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">LunaLevellingGuide</string>
+    <string name="app_name">Luna Levelling Guide</string>
+    <string name="targetability">This skill is</string>
 </resources>
